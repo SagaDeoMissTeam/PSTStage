@@ -33,7 +33,7 @@ public class PSTStage {
 
     @SubscribeEvent
     public void onPlayerLoad(PlayerEvent.PlayerLoggedInEvent event){
-        if(event.getEntity().getLevel().isClientSide)return;
+        if(event.getEntity().level().isClientSide)return;
 
         new SendStagesS2C(ReloadContainer.INSTANCE.serializeNBT()).sendTo((ServerPlayer) event.getEntity());
     }

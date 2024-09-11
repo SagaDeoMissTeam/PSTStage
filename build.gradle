@@ -143,15 +143,15 @@ dependencies {
     // If the group id is "net.minecraft" and the artifact id is one of ["client", "server", "joined"],
     // then special handling is done to allow a setup of a vanilla dependency without the use of an external repository.
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-    implementation fg.deobf("curse.maven:passive-skill-tree-850298:5712051")
-    implementation fg.deobf("curse.maven:game-stages-268655:4396244")
-    implementation fg.deobf("curse.maven:bookshelf-228525:4556697")
-    implementation fg.deobf("curse.maven:crafttweaker-239197:5210437")
+    implementation fg.deobf("curse.maven:passive-skill-tree-850298:5712053")
+    implementation fg.deobf("curse.maven:game-stages-268655:4648424")
+    implementation fg.deobf("curse.maven:bookshelf-228525:5423987")
+    implementation fg.deobf("curse.maven:crafttweaker-239197:5648765")
 
-    implementation fg.deobf("curse.maven:item-production-lib-950401:5114035")
-    implementation fg.deobf("curse.maven:attributefix-280510:5126457")
-    implementation fg.deobf("curse.maven:curios-309927:5494603")
-    implementation fg.deobf("curse.maven:architectury-api-419699:5137942")
+    implementation fg.deobf("curse.maven:item-production-lib-950401:5114036")
+    implementation fg.deobf("curse.maven:attributefix-280510:4911084")
+    implementation fg.deobf("curse.maven:curios-309927:5680164")
+    implementation fg.deobf("curse.maven:architectury-api-419699:5137938")
     // Example mod dependency with JEI - using fg.deobf() ensures the dependency is remapped to your development mappings
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}")

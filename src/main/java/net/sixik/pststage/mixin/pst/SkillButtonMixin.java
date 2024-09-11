@@ -25,7 +25,7 @@ public class SkillButtonMixin {
 
     @Shadow @Final public PassiveSkill skill;
 
-    @Inject(method = "getTooltip", at = @At("RETURN"))
+    @Inject(method = "getSkillTooltip", at = @At("RETURN"))
     public void sdm$getTooltip(PassiveSkillTree skillTree, CallbackInfoReturnable<List<MutableComponent>> cir){
         if(!PSTStage.CLIENT.skillTasks.isEmpty()){
             for (SkillTreeSkillStage skillTask : PSTStage.CLIENT.skillTasks) {

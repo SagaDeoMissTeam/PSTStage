@@ -31,4 +31,9 @@ public class SkillTreeStageAction implements IRuntimeAction {
     public String describe() {
         return "Restricted passive skill tree " + skills.stream().map(ResourceLocation::toString).toList() + " on " + stage + ".stage";
     }
+
+    @Override
+    public String systemName() {
+        return "PSTStage";
+    }
 }

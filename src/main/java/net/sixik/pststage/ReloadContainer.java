@@ -30,7 +30,8 @@ public class ReloadContainer extends SimplePreparableReloadListener<Void> implem
 
     @Override
     protected void apply(Void p_10793_, ResourceManager p_10794_, ProfilerFiller p_10795_) {
-
+        skillTreeStage = SkillTreeStage.EMPTY;
+        skillTasks = new ArrayList<>();
     }
 
     @Override

@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.sixik.pststage.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "PSTStage.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+    "MinecraftMixin",
+    "pst.SkillButtonMixin",
+    "pst.SkillTreeScreenAccessor",
+    "pst.SkillTreeScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
